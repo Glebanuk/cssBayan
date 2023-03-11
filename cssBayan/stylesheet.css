@@ -10,26 +10,49 @@ body{
 }
 
 h1 {
+    font-size: 3rem;
     width: 100%;
     margin: 1rem auto;
 }
 .wrapper{
-    
     margin: auto;
-    width: 600px;
+    width: 30rem;
 
 }
 .content{
-    
+    text-align: center;
 }
 .img{
     margin: 0 auto;
 }
 .title{
-    font-size: 1rem;
+    font-size: 2rem;
+    color: rgb(35, 35, 99);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.title:hover{
+    color:rgb(2, 2, 255) ;
+    cursor: pointer;
+}
+span{
+    transform:rotate(45deg) ;
 }
 .wrapper li{
     list-style-type: none;
     width: 100%;
     margin-bottom: 10px;
+    background-color: rgb(172, 172, 172);
+    border-radius: 0.5rem;;
+}
+.wrapper li:hover{
+    cursor: pointer;
+}
+.accordion{
+    border-radius: 4;
+}
+input[type="radio"]{
+    opacity: 0;
+    pointer-events: none;
 }
