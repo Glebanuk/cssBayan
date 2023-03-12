@@ -36,15 +36,22 @@ h1 {
     color:rgb(2, 2, 255) ;
     cursor: pointer;
 }
-span{
-    transform:rotate(45deg) ;
+
+label:after{
+    content: '+';
 }
+.list input[type="radio"]:hover + label::after{
+    content:"-";
+
+} 
 .wrapper li{
     list-style-type: none;
     width: 100%;
     margin-bottom: 10px;
     background-color: rgb(172, 172, 172);
     border-radius: 0.5rem;;
+    border-bottom: 0.1em  solid;
+    border-top:  0.1em  solid;
 }
 .wrapper li:hover{
     cursor: pointer;
@@ -56,3 +63,14 @@ input[type="radio"]{
     opacity: 0;
     pointer-events: none;
 }
+
+.list .content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+
+}
+.list input[type="radio"]:hover + label + .content{
+    max-height: 600px;
+}
+
