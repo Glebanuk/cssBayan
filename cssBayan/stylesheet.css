@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: grey;
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    width: 100%;
+    margin: 1rem auto;
+}
+.wrapper{
+    margin: auto;
+    width: 30rem;
+    height: 80rem;
+
+}
+.content{
+    text-align: center;
+}
+.img{
+    margin: 0 auto;
+}
+.title{
+    font-size: 2rem;
+    color: rgb(35, 35, 99);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.title:hover{
+    color:rgb(2, 2, 255) ;
+    cursor: pointer;
+}
+
+label:after{
+    content: '+';
+}
+.list input[type="radio"]:hover + label::after{
+    content:"-";
+
+}
+.wrapper li{
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgb(172, 172, 172);
+    border-radius: 0.5rem;;
+    border-bottom: 0.1em  solid;
+    border-top:  0.1em  solid;
+}
+.wrapper li:hover{
+    cursor: pointer;
+}
+.accordion{
+    border-radius: 4;
+}
+input[type="radio"]{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.list .content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+
+}
+
+input[type="radio"]:checked + label + .content{
+    max-height: 600rem;
+}
+
+.list input[type="radio"]:hover + label + .content{
+    max-height: 600rem;
+}
+
+
+
