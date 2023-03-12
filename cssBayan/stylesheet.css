@@ -17,6 +17,7 @@ h1 {
 .wrapper{
     margin: auto;
     width: 30rem;
+    height: 80rem;
 
 }
 .content{
@@ -43,7 +44,7 @@ label:after{
 .list input[type="radio"]:hover + label::after{
     content:"-";
 
-} 
+}
 .wrapper li{
     list-style-type: none;
     width: 100%;
@@ -70,7 +71,14 @@ input[type="radio"]{
     transition: max-height 0.2s;
 
 }
-.list input[type="radio"]:hover + label + .content{
-    max-height: 600px;
+
+input[type="radio"]:checked + label + .content{
+    max-height: 600rem;
 }
+
+.list input[type="radio"]:hover + label + .content{
+    max-height: 600rem;
+}
+
+
 
